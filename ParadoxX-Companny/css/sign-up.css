@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+ }
+ /*rregullimi i hapsires mbrapa*/
+ .AH-hero{
+   width: 100%;
+   min-height: 100vh;
+   background: #292929;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+ }
+ .AH-hero h1{
+   color: #fff;
+   font-weight: 500;
+   margin-bottom: 40px;
+ }
+ /**/
+ /*pjesa ne te djathten teg singup me ngyr te bardh rregullimi i saj*/
+ .AH-signup-box{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 90%;
+   max-width: 800px;
+   background: #fff;
+ }
+ /*rregullimi i pjeses se majt*/
+ .AH-left-box{
+   padding: 50px;
+   background: #6b00d5;
+   flex-basis: 50%;
+   flex-grow: 1;
+   color: #fff;
+ }
+ .AH-right-box{
+   padding: 50px;
+   flex-basis: 50%;
+   flex-grow: 1;
+ }
+ /**/
+  /*rregullimi i pjeses se inputeve ku shkruajm ngjyrat brenda inputeve dhe sendet tjera*/
+ .input-box{
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+   border: 1px solid #fff;
+   outline: none;
+   color: #fff;
+   font-size: 12px;
+   background: transparent;
+ }
+ /*fjalet ne mes inputeve si psh tek*/
+ ::placeholder{
+  color: #fff; 
+ }
+ input[type=checkbox]{
+   margin-top: 30px
+ }
+ /*PJESA E RREGULLIMIT TEK SIGNUP*/
+ .AH-left-box label{
+   font-size: 14px;
+ }
+ /*rregullimi i butonit signup*/
+ .AH-left-box button{
+   width: 100%;
+   background: #fff;
+   padding: 10px;
+   border: 0;
+   outline: none;
+   font-size: 16px;
+   margin-top: 20px;
+   cursor: pointer;
+   transition: background 0.5s;
+   display: flex;
+   align-items: center;
+   justify-content:center ;
+ }
+  /*rregullimi i animacionit ne butonin signup edhe tek sh*/
+ .AH-left-box button:hover{
+   font-weight: 500;
+   background: #000;
+   color: #fff;
+ }
+ .AH-left-box button span{
+   display: inline-block;
+   width: 30px;
+   overflow: hidden;
+   transform: width 0.5s;
+ }
+ .AH-left-box button:hover span{
+   width: 30px;
+ 
+ }
+ /*rregullimi i boksave fb gg tw pjesa mbrapa dhe ngjyrat e*/
+ .AH-right-box a{
+   display: block;
+   width: 100%;
+   margin: 20px 0;
+   min-height: 25px;
+   color: #fff;
+   font-size: 14px;
+   padding: 15px 30px;
+   text-decoration: none;
+   background: #6b00d5;
+ }
+  /*rregullimi i teksit tek ana e djath qe te fut ne faccebook etj*/
+ .AH-right-box a i{
+   font-size: 18px;
+   margin-right: 10px;
+ 
+ }
+
+
+ 
+ @media only screen and (max-width:700px){
+  
+ }

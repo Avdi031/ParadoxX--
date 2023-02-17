@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*rregullimi i hapsires ne anen e djatht */
+.AH-wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.left-col, .right-col{
+    flex-basis: 50%;
+    height: 100vh;
+    position: relative;
+}
+/**/
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.AH-menu-icon{
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.AH-logo{
+    margin: 0 90px;
+    width: 90px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 1px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 17px;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+/*rregulimi i teksiti ne pjesen e majt*/
+.AH-content{
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+}
+/*teksti i paraqitur me h1*/
+.AH-content h1{
+    color: #05a35f;
+    font-size: 60px;
+    line-height: 70px;
+    margin: 25px 0;
+}
+/*teksti i paraqitur me p*/
+.AH-content p{
+    color: #777;
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+button{
+    width: 200px;
+    border: none;
+    background: #05a35f;
+    box-shadow:0px 10px 10px 1px rgba(219, 219, 219, 0.5) ;
+    padding: 25px 0;
+    color: #fff;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+/*rregullimi i fotos qe paraqet nje or mesimi*/
+.AH-slider{
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+.AH-slider img{
+    width: 100%;
+}
+/*hapsira e gjelbert posht fotos*/
+.AH-slider-content{
+    width: 100%;
+    height: 40%;
+    background: #05a35f;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.AH-slider-content h2{
+    font-size: 26px;
+    font-weight: 100;
+    align-items: center;
+    color: #fff;
+}
+.AH-slider-content p{
+    color: #bfffdd;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+/*vija qe ndan titullin me shkrimin posht*/
+hr{
+    border: none;
+    width: 250px;
+    height: 1px;
+    background: #b5e3cf;
+    margin: 20px 0 30px;
+}
+/*pjesa e shgjetave*/
+.AH-next-back{
+    width: 120px;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.AH-next-back img{
+    width: 45px;
+    cursor: pointer     ;
+}
+/*vija mes shigjetave*/
+.vertical-line{
+    width: 2px;
+    height: 30px;
+    background: #b5e3cf;
+}
+.AH-social-icons img{
+    height: 15px;
+    margin: 20px;
+    cursor: pointer;
+}
+.AH-social-icons{
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width:800px){
+    nav ul{
+        width: 100%;
+        
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }   
+    nav ul li{
+        display: block;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }   
+    nav ul li a{
+        color: rgb(9, 9, 9);
+        
+    }
+    .AH-menu-icon{
+        display: block;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .AH-logo{
+        margin: 30px auto;
+    }
+    .left-col, .right-col{
+        flex-basis: 100%;
+    }
+    .AH-content{
+        left: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .AH-content h1{
+        font-size: 34px;
+        line-height: 38px;
+    } 
+    .AH-slider{
+        height: auto;
+    }
+    .AH-slider-content{
+        height: auto;
+    }
+
+} 
